@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/HarshalPurohitEdits/TheMovieProviderBot.git /TheMovieProviderBot 
+  git clone https://github.com/Kanhaiya960/ThanosBot.git /ThanosBot 
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /TheMoviesProviderBot
+  git clone $UPSTREAM_REPO /ThanosBot
 fi
-cd /THALAPATHY-FILTER-BOT 
+cd /ThanosBot 
 pip3 install -U -r requirements.txt
-echo "Starting TheMovieProviderBot...."
+echo "Starting ThanosBot...."
 python3 bot.py
